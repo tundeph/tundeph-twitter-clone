@@ -1,11 +1,17 @@
 import React from "react";
+import Sidemenu from "./Sidemenu";
 import "./App.css";
-import { react } from "@babel/types";
 
 function App() {
   return (
     <div className="app">
       <h1>Twitter Clone by TundePhoster </h1>
+      {/* Sidebar */}
+      <Sidemenu />
+
+      {/* Tweets */}
+
+      {/* RightWidget  */}
     </div>
   );
 }

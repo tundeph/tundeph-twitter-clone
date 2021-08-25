@@ -1,0 +1,28 @@
+.menuOptions {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menuOptions:hover {
+  background-color: #e8f5fe;
+  border-radius: 30px;
+  color: var(--twitter-color);
+  transition: color 100ms ease-out;
+}
+
+.menuOptions > .MuiSvgIcon-root {
+  padding: 20px;
+}
+
+.menuOptions > h4 {
+  margin-right: 20px;
+}
+
+.menuOptions__active {
+  color: var(--twitter-color);
+}
+
+.menuText {
+  /* to hide the menu text after the screen is reduced */
+}
