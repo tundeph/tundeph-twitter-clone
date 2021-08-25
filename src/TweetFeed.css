@@ -1,0 +1,16 @@
+.tweetFeed {
+  flex: 0.45;
+  border-right: 1px solid var(--twitter-bg-color);
+  min-width: fit-content;
+  overflow-y: scroll;
+  border-bottom: 1px solid var(--twitter-bg-color);
+
+  /* Hide scrollbar for IE and Forefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* hide scroll bar  */
+.tweetFeed::-webkit-scrollbar {
+  display: none;
+}

@@ -1,15 +1,16 @@
 import React from "react";
 import Sidemenu from "./Sidemenu";
+import TweetFeed from "./TweetFeed";
 import "./App.css";
 
 function App() {
   return (
     <div className="app">
-      <h1>Twitter Clone by TundePhoster </h1>
       {/* Sidebar */}
       <Sidemenu />
 
-      {/* Tweets */}
+      {/* TweetFeed */}
+      <TweetFeed />
 
       {/* RightWidget  */}
     </div>

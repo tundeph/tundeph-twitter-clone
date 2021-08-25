@@ -1,0 +1,10 @@
+.tweetHeader {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  padding: 15px 20px;
+  font-size: 2opx;
+  font-weight: 700 !important;
+  border-bottom: 1px solid var(--twitter-bg-color);
+}

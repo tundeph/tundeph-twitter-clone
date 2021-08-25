@@ -23,6 +23,9 @@
   color: var(--twitter-color);
 }
 
-.menuText {
-  /* to hide the menu text after the screen is reduced */
+@media only screen and (max-width: 768px) {
+  .menuText {
+    /* to hide the menu text after the screen is reduced */
+    display: none !important ;
+  }
 }
