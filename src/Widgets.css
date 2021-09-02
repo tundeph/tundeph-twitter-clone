@@ -1,0 +1,16 @@
+.widgets {
+  padding: 10px;
+  flex: 0.25;
+}
+
+.widget__top > .MuiInput-root {
+  /* border: 1px solid var(--twitter-gray-color) !important; */
+  border-radius: 50px;
+  outline: none !important;
+  padding: 5px 5px 5px 10px;
+  color: var(--twitter-gray-color);
+  width: 100%;
+  font-family: inherit;
+  font-size: 12px;
+  background-color: var(--twitter-bg-color);
+}

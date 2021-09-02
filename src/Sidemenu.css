@@ -1,7 +1,7 @@
 .sidemenu {
   border-right: 1px solid var(--twitter-bg-color);
   flex: 0.25;
-  min-wdith: 250px;
+  min-width: 250px;
   padding-right: 20px;
   padding-left: 20px;
 }
@@ -15,12 +15,12 @@
     padding-left: 20px !important;
   }
 
-  .MuiButton-root {
+  .sidemenu > .MuiButton-root {
     display: none !important;
   }
 }
 
-.MuiButton-root {
+.sidemenu > .MuiButton-root {
   background-color: var(--twitter-color) !important;
   border: none !important;
   border-radius: 50px !important;
@@ -29,9 +29,6 @@
   text-transform: inherit !important;
   font-size: inherit !important;
   padding: 30px !important;
-}
-
-.MuiButton-label {
   color: #fff !important ;
   font-weight: 900 !important;
 }

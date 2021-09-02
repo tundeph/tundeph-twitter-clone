@@ -4,7 +4,72 @@
   background-color: white;
   z-index: 100;
   padding: 15px 20px;
-  font-size: 2opx;
+  font-size: 15px;
   font-weight: 700 !important;
   border-bottom: 1px solid var(--twitter-bg-color);
+  display: flex;
+}
+
+.headerIcon {
+  margin-left: auto !important ;
+  font-size: 20px !important;
+}
+
+.tweetBox {
+  padding-bottom: 10px;
+  border-bottom: 8px solid var(--twitter-bg-color);
+}
+
+.tweetBox > form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.tweetBox .MuiButton-root {
+  margin-left: auto;
+  background-color: var(--twitter-color) !important;
+  border: none !important;
+  border-radius: 30px !important;
+  height: 30px !important;
+  margin-top: -10px !important;
+  text-transform: inherit !important;
+  font-size: inherit !important;
+  padding: 20px !important;
+  color: #fff !important;
+}
+
+.tweetInput {
+  display: flex;
+  padding: 10px;
+}
+
+.tweetRight {
+  width: 100%;
+  margin-left: 20px;
+}
+
+.tweetTextarea textarea {
+  font-family: inherit;
+  border: none;
+  width: 100%;
+}
+
+.tweetTextarea textarea:focus {
+  border: none;
+  outline: none;
+}
+
+.tweetButtons {
+  display: flex;
+  margin-top: 30px !important;
+}
+
+.tweetButtons > .left {
+  margin-right: auto;
+  color: var(--twitter-color);
+}
+
+.tweetButtons .MuiSvgIcon-root {
+  margin-right: 10px;
 }

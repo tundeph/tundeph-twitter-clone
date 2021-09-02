@@ -1,0 +1,50 @@
+.tweets {
+  font-family: inherit;
+  font-size: 15px;
+  display: flex;
+  border-bottom: 1px solid var(--twitter-bg-color);
+  padding: 15px;
+}
+
+.tweets__avatar {
+  margin-right: 20px;
+  height: 5px;
+}
+
+.tweets__body {
+  width: 100%;
+}
+
+.tweets__body img {
+  border-radius: 20px !important;
+  min-width: 100% !important;
+  margin-top: 10px;
+}
+
+.tweets__headerText {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.tweets__headerText span {
+  margin-right: 2px;
+}
+
+.tweets__footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  color: var(--twitter-gray-color);
+}
+
+.tweets__footer .MuiSvgIcon-root {
+  padding-right: 3px;
+}
+.tweets__footer .icon__number {
+  font-size: 15px;
+  vertical-align: top;
+}
+
+.tweets__username {
+  color: var(--twitter-gray-color);
+}

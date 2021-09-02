@@ -1,6 +1,7 @@
 import React from "react";
 import Sidemenu from "./Sidemenu";
 import TweetFeed from "./TweetFeed";
+import Widgets from "./Widgets";
 import "./App.css";
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
       {/* TweetFeed */}
       <TweetFeed />
 
-      {/* RightWidget  */}
+      {/* Widgets  */}
+      <Widgets />
     </div>
   );
 }

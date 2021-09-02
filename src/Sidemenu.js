@@ -27,7 +27,7 @@ const Sidemenu = () => {
       <MenuOptions text="Profile" Icon={<PersonIcon />} />
       <MenuOptions text="More" Icon={<MoreHorizIcon />} />
 
-      <Button variant="outlined" classsName="sidemenu__tweet" fullWidth>
+      <Button variant="outlined" fullWidth>
         Tweet
       </Button>
     </div>
