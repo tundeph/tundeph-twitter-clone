@@ -3,6 +3,7 @@ import "./TweetFeed.css";
 import TweetHeader from "./TweetHeader";
 import Tweets from "./Tweets";
 import db from "./firebase";
+import FlipMove from "react-flip-move";
 
 function TweetFeed() {
   const [tweets, setTweets] = useState([]);
@@ -19,16 +20,20 @@ function TweetFeed() {
       <TweetHeader />
       {/* Tweets */}
       {/* {tweets.map((tweets) => ( */}
-      {tweets.map((post) => (
-        <Tweets
-          displayName={post.displayName}
-          userName={post.userName}
-          verified={post.verified}
-          text={post.text}
-          image={post.image}
-          avatar={post.avatar}
-        />
-      ))}
+
+      <FlipMove>
+        {tweets.map((post) => (
+          <Tweets
+            key={post.text}
+            displayName={post.displayName}
+            userName={post.userName}
+            verified={post.verified}
+            text={post.text}
+            image={post.image}
+            avatar={post.avatar}
+          />
+        ))}
+      </FlipMove>
 
       {/* Tweets */}
     </div>
