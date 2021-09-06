@@ -10,7 +10,12 @@ function TweetFeed() {
 
   useEffect(() => {
     db.collection("tweets").onSnapshot((snapshot) =>
-      setTweets(snapshot.docs.map((doc) => doc.data()))
+      setTweets(
+        snapshot.docs.map((doc) => {
+          // console.log(doc.id);
+          return [doc.id, doc.data()];
+        })
+      )
     );
   }, []);
 
@@ -22,17 +27,20 @@ function TweetFeed() {
       {/* {tweets.map((tweets) => ( */}
 
       <FlipMove>
-        {tweets.map((post) => (
-          <Tweets
-            key={post.text}
-            displayName={post.displayName}
-            userName={post.userName}
-            verified={post.verified}
-            text={post.text}
-            image={post.image}
-            avatar={post.avatar}
-          />
-        ))}
+        {tweets.map((post) => {
+          // console.log(post[0]);
+          return (
+            <Tweets
+              key={post[0]}
+              displayName={post[1].displayName}
+              userName={post[1].userName}
+              verified={post[1].verified}
+              text={post[1].text}
+              image={post[1].image}
+              avatar={post[1].avatar}
+            />
+          );
+        })}
       </FlipMove>
 
       {/* Tweets */}
