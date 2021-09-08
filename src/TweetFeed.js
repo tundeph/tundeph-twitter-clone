@@ -1,3 +1,5 @@
+//ABOUT: This is the main body for the Tweet feed, it contains the <TweetHeader> and <Tweets> components
+
 import React, { useState, useEffect } from "react";
 import "./TweetFeed.css";
 import TweetHeader from "./TweetHeader";
@@ -8,11 +10,14 @@ import FlipMove from "react-flip-move";
 function TweetFeed() {
   const [tweets, setTweets] = useState([]);
 
+  //useEffect is used to track changes in the  database and instantly show it
+  //in the tweet feed.
   useEffect(() => {
     db.collection("tweets").onSnapshot((snapshot) =>
       setTweets(
         snapshot.docs.map((doc) => {
-          // console.log(doc.id);
+          // doc.id is batched into an object with doc.data to serve as key for the objects
+          //when rendering the data onto UI in <Tweets> component below
           return [doc.id, doc.data()];
         })
       )
@@ -24,11 +29,9 @@ function TweetFeed() {
       {/* Tweet Header */}
       <TweetHeader />
       {/* Tweets */}
-      {/* {tweets.map((tweets) => ( */}
-
+      {/* <FlipMove> component was imported to give tweets an animation effect */}
       <FlipMove>
         {tweets.map((post) => {
-          // console.log(post[0]);
           return (
             <Tweets
               key={post[0]}

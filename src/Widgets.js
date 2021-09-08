@@ -1,3 +1,5 @@
+//ABOUT: This is the right section of the page
+
 import React from "react";
 import "./Widgets.css";
 import Input from "@material-ui/core/Input";

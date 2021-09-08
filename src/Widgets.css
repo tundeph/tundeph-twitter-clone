@@ -1,6 +1,7 @@
 .widgets {
   padding: 10px;
   flex: 0.25;
+  min-width: 200px;
 }
 
 .widget__top > .MuiInput-root {
@@ -13,4 +14,11 @@
   font-family: inherit;
   font-size: 12px;
   background-color: var(--twitter-bg-color);
+}
+
+@media only screen and (max-width: 768px) {
+  .widgets {
+    padding: 10px;
+    min-width: 150px !important;
+  }
 }

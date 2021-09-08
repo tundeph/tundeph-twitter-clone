@@ -1,3 +1,5 @@
+//ABOUT: This is the header part of the TweetFeed where tweets are actually typed out and posted
+
 import React, { useState } from "react";
 import "./TweetHeader.css";
 import { Avatar, Button } from "@material-ui/core";

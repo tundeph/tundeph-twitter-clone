@@ -9,8 +9,9 @@
 @media only screen and (max-width: 768px) {
   .sidemenu {
     border-right: 1px solid var(--twitter-bg-color);
-    flex: 0.1 !important;
-    /* min-wdith: 250px; */
+    /* flex: 0.1 !important; */
+    min-width: 70px;
+    max-width: 70px;
     padding-right: 0px !important;
     padding-left: 20px !important;
   }

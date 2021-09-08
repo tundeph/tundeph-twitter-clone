@@ -1,3 +1,5 @@
+//ABOUT: This the <Tweets> component that contains and shows a tweet or post
+
 import React, { forwardRef } from "react";
 import "./Tweets.css";
 import Avatar from "@material-ui/core/Avatar";

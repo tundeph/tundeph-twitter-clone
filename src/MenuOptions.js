@@ -1,3 +1,5 @@
+//ABOUT: These are the menus contained in the sidemenu.js as objects
+
 import React from "react";
 import "./MenuOptions.css";
 

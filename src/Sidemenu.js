@@ -1,3 +1,5 @@
+//ABOUT: This is the component that contains <MenuOptions> components
+
 import React from "react";
 import "./Sidemenu.css";
 import TwitterIcon from "@material-ui/icons/Twitter";
